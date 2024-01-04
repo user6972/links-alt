@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linked1</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #02133e;
+            color: white;
+            font-size: 130%; 
+        }
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('bl.ttf') format('truetype');
+        }
+        h2 {
+            font-family: 'CustomFont', Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease; 
+        }
+        ul li a:hover {
+            color: lime; 
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px; 
+        }
+        .button {
+            background-color: white;
+            border: none;
+            color: #02133e;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 10px;
+            border-radius: 15px; 
+        }
+        .logo {
+            margin-top: 20px; 
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .image-card {
+            margin: 10px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .image-card img {
+            width: 100%; /* Make the image fill the container */
+            border-radius: 15px;
+        }
+
+        .image-title {
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="button" onclick="window.location.href='index.html'">Home</button>
+        <button class="button" onclick="window.location.href='games.html'">Games</button>
+        <button class="button" onclick="window.location.href='about.html'">About</button>
+        <button class="button" onclick="window.location.href='contact.html'">Contact</button>
+    </div>
+
+    <div class="image-container">
+        <div class="image-card">
+            <a href="example.html"><img src="image1.jpg" alt="Image 1"></a>
+            <div class="image-title">Title 1</div>
+        </div>
+        <div class="image-card">
+            <a href="example.html"><img src="image2.jpg" alt="Image 2"></a>
+            <div class="image-title">Title 2</div>
+        </div>
+        <!-- Add more image cards as needed -->
+    </div>
+</body>
+</html>
