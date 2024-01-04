@@ -1,0 +1,63 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>Linked1</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #02133e;
+            color: white;
+            font-size: 130%; /* Enlarge all text by 130% */
+        }
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('bl.ttf') format('truetype');
+        }
+        h2 {
+            font-family: 'CustomFont', Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease; 
+        }
+        ul li a:hover {
+            color: lime; 
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px; /* Increase the margin-top to move the buttons up */
+        }
+        .button {
+            background-color: white;
+            border: none;
+            color: #02133e;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 10px;
+            border-radius: 15px; /* Make the buttons rounded */
+        }
+        .logo {
+            margin-top: 20px; /* Adjust the margin-top to move the logo down */
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="button" onclick="window.location.href='index.html'">Home</button>
+        <button class="button" onclick="window.location.href='about.html'">About</button>
+        <button class="button" onclick="window.location.href='contact.html'">Contact</button>
+    </div>
+    <p> Welcome to Linked1! Our site's purpose is to post updated and unblocked links of game sites or proxies. We have been doing this for 3 months, our site has improved much more from then. We plan to host games directly on the vercel.app links soon </p>
+    <ul>
+    </ul>
+</body>
+</html>
