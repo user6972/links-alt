@@ -30,9 +30,28 @@
         ul li a:hover {
             color: lime; 
         }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #4CAF50; /* Green background */
+            border: none; /* Remove borders */
+            color: white; /* White text */
+            padding: 10px 20px; /* Some padding */
+            font-size: 16px; /* Set a font size */
+            cursor: pointer; /* Mouse pointer on hover */
+            margin: 0 10px; /* Add some margin between buttons */
+        }
     </style>
 </head>
 <body>
+    <div class="button-container">
+        <button class="button">Home</button>
+        <button class="button">About</button>
+        <button class="button">Contact</button>
+    </div>
     <img src="logo.gif" alt="Logo" width="200" height="100">
     <h2>Welcome to Linked1! Links Are Here (new links updated/added daily)</h2>
     <p>We are no longer hosting pr0xies using vercel.app links, please use interstellar instead </p>
