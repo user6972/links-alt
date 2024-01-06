@@ -4,7 +4,6 @@
              background-color: #02133e;
             color: white;
             font-size: 130%; /* Enlarge all text by 130% */
-            z-index: +1; /* Set the z-index to move particles behind other content */
 
   
 
