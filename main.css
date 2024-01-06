@@ -42,3 +42,15 @@
         .logo {
             margin-top: 20px; /* Adjust the margin-top to move the logo down */
         }
+
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #02133e;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
