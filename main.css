@@ -1,0 +1,43 @@
+ body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            font-size: 130%; /* Enlarge all text by 130% */
+        }
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('bl.ttf') format('truetype');
+        }
+        h2 {
+            font-family: 'CustomFont', Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease; 
+        }
+        ul li a:hover {
+            color: lime; 
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px; /* Increase the margin-top to move the buttons up */
+        }
+        .button {
+            background-color: white;
+            border: none;
+            color: #02133e;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 10px;
+            border-radius: 15px; /* Make the buttons rounded */
+        }
+        .logo {
+            margin-top: 20px; /* Adjust the margin-top to move the logo down */
+        }
