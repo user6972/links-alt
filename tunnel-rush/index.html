@@ -1,27 +1,52 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Tunnel Rush | 3kh0</title>
-    <link rel="stylesheet" href="./style/style.css">
-	<script src="./UnityLoader.js"></script>
-    <script src="./UnityProgress.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "build.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
-    </script>
-  </head>
-  <body>
-    <!-- BY ECHO!!! DO NOT REMOVE THIS COMMENT THE GAME WILL BREAK!!!
+<html><head><base target="_blank"><base target="_blank"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hyperwood/h4tfgh7@c4d52c61c545cc2d537d647ee6a882856d9baf34/style.css">
+    <script id="gamedistribution-jssdk" src=""></script><script src="https://cdn.jsdelivr.net/gh/hyperwood/h4tfgh7@c4d52c61c545cc2d537d647ee6a882856d9baf34/UnityProgress.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hyperwood/h4tfgh7@c4d52c61c545cc2d537d647ee6a882856d9baf34/unityloader49.js"></script>
 
-https://3kh0.github.io/
--->
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 100%; height: 95%; margin: auto;"></div>
-	  <div class="footer">
-	            <div class="webgl-logo"></div>
-	            <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-	            <div class="title">Tunnel Rush</div>
-	        </div>
+    <script type="text/javascript">
+      var gameInstance;
+      window.onload = function () {
+        let  bttn = document.createElement( "button" );
+        bttn.appendChild(document.createTextNode( "CLICK TO PLAY NOW" ));
+        bttn.setAttribute('id', 'run_game');
+        bttn.style.display = 'none';
+        bttn.style.position = 'absolute';
+        document.body.appendChild(bttn);
+        bttn.style.display = 'block';
+        bttn.style.left = ((document.body.clientWidth - bttn.offsetWidth)/2) + 'px';
+        bttn.style.top = ((document.body.clientHeight - bttn.offsetHeight)/2) + 'px';
+        bttn.onclick = function () {
+          gameInstance = UnityLoader.instantiate("gameContainer", "https://cdn.jsdelivr.net/gh/hyperwood/h4tfgh7@c4d52c61c545cc2d537d647ee6a882856d9baf34/tunnel-rush_v9.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
+          this.remove();
+        }
+      }
+    </script>
+    </head><body><div class="webgl-content">
+      <div id="gameContainer" style="width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; position: relative; background: rgb(128, 128, 128);"><canvas id="#canvas" width="507" height="303" style="cursor: default;"></canvas><div class="logo Dark" style="display: none;"></div><div class="progress Dark" style="display: none;"><div class="empty" style="width: 0%;"></div><div class="full" style="width: 100%;"></div></div></div>
     </div>
-  </body>
-</html>
+<style>
+button {
+  min-width: 100%;
+  font-family: inherit;
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 18px 46px;
+  font-size: 28px;
+  cursor: pointer;
+}
+button:hover {
+  background: #3f3f3f;
+}
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #cbd6ee;
+} 
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+</style><script src="blob:https://2038978652-atari-embeds.googleusercontent.com/155819a2-e8da-4b7c-ba2d-454b9ff60003"></script><script src="blob:https://1855621307-atari-embeds.googleusercontent.com/a31c1a39-c6bc-4050-9880-e22d55120e9b"></script></body></html>
