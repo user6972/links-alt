@@ -5,9 +5,9 @@
     <title>Tunnel Rush</title>
     <link rel="shortcut icon" href="style/favicon.ico">
     <link rel="stylesheet" href="style/style.css">
-	<script src="/adinLoader.js"></script>
-	<script src="UnityLoader.js"></script>
-    <script src="UnityProgress.js"></script>
+	<script src="tunnel-rush/adinLoader.js"></script>
+	<script src="tunnel-rush/UnityLoader.js"></script>
+    <script src="tunnel-rush/UnityProgress.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "build.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
     </script>
