@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeltaMath</title>
-    <script>
-        function openAboutBlankTab() {
-            // Open a new window with about:blank
-            var newWindow = window.open('about:blank', '_blank');
-            
-            // Check if the window is successfully opened
-            if (newWindow) {
-                // Set the location of the about:blank tab to /main.html
-                newWindow.location.href = '/main.html';
-            } else {
-                // Handle the case where opening a new window is blocked
-                console.error('Opening new window is blocked.');
-            }
-        }
-
-        // Call the function when the page loads
-        window.onload = openAboutBlankTab;
-    </script>
+    <title>Open Page on Load</title>
 </head>
 <body>
-    <!-- Your page content goes here -->
-    <h1>math</h1>
-    <!-- Add more content as needed -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var url = "main.html";
+        var win = window.open('about:blank');
+
+        if (win) {
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url;
+            
+            win.document.body.appendChild(iframe);
+        }
+    });
+</script>
+
 </body>
 </html>
