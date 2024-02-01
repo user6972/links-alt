@@ -56,12 +56,38 @@
             flex-wrap: wrap;
         }
 
-        .image-card {
-  width: 120px; /* Adjust the width of the image card */
+       /* Dark mode styles for the search bar */
+.search-container {
+  background-color: #333;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+  max-width: 300px; /* Adjust the width as needed */
+}
+
+/* Styles for the search input */
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 15px;
+  outline: none;
+}
+
+/* Light placeholder text for the search input */
+#searchInput::placeholder {
+  color: #bbb;
+}
+
+/* Additional styling for the existing image cards */
+.image-card {
+  width: 120px;
   margin: 10px;
   border-radius: 15px;
   overflow: hidden;
-  flex: 0 0 10%; /* Adjust the width as needed */
+  flex: 0 0 20%;
   box-sizing: border-box;
   padding: 10px;
   text-align: center;
