@@ -57,12 +57,14 @@
         }
 
        /* Dark mode styles for the search bar */
+/* Dark mode styles for the search bar */
 .search-container {
   background-color: #333;
   border-radius: 20px;
   padding: 10px;
-  margin: 20px;
+  margin: 20px auto; /* Center the search bar */
   max-width: 300px; /* Adjust the width as needed */
+  transition: max-width 0.3s ease; /* Add transition for smooth expand animation */
 }
 
 /* Styles for the search input */
@@ -80,6 +82,7 @@
 #searchInput::placeholder {
   color: #bbb;
 }
+
 
 /* Additional styling for the existing image cards */
 .image-card {
@@ -134,7 +137,7 @@
     </div>
 1v1.lol fixed
     <div class="search-container">
-  <input type="text" id="searchInput" placeholder="Search" oninput="filterGames()">
+  <input type="text" id="searchInput" placeholder="Search" oninput="filterGames()" onfocus="expandSearchBar()">
 </div>
 <script>
 function filterGames() {
@@ -151,6 +154,33 @@ function filterGames() {
       cards[i].style.display = "none";
     }
   }
+}
+</script>
+<script>
+function filterGames() {
+  var input, filter, cards, card, title, i;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  cards = document.getElementById("gameContainer").getElementsByClassName("image-card");
+
+  for (i = 0; i < cards.length; i++) {
+    title = cards[i].getElementsByClassName("image-title")[0];
+    if (title.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      cards[i].style.display = "";
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+}
+
+function expandSearchBar() {
+  var searchContainer = document.getElementById("searchContainer");
+  searchContainer.style.maxWidth = "100%"; /* Expand to full width */
+}
+
+function collapseSearchBar() {
+  var searchContainer = document.getElementById("searchContainer");
+  searchContainer.style.maxWidth = "300px"; /* Adjust the width as needed */
 }
 </script>
 
