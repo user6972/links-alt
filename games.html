@@ -87,7 +87,7 @@
   margin: 10px;
   border-radius: 15px;
   overflow: hidden;
-  flex: 0 0 20%;
+  flex: 0 0 10%;
   box-sizing: border-box;
   padding: 10px;
   text-align: center;
@@ -134,8 +134,25 @@
     </div>
 1v1.lol fixed
     <div class="search-container">
-  <input type="text" id="searchInput" placeholder="Search for games">
+  <input type="text" id="searchInput" placeholder="Search" oninput="filterGames()">
 </div>
+<script>
+function filterGames() {
+  var input, filter, cards, card, title, i;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  cards = document.getElementById("gameContainer").getElementsByClassName("image-card");
+
+  for (i = 0; i < cards.length; i++) {
+    title = cards[i].getElementsByClassName("image-title")[0];
+    if (title.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      cards[i].style.display = "";
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+}
+</script>
 
     <div class="image-container">
         <div class="image-card">
