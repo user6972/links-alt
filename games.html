@@ -58,6 +58,7 @@
 
        /* Dark mode styles for the search bar */
 /* Dark mode styles for the search bar */
+/* Dark mode styles for the search bar */
 .search-container {
   background-color: #333;
   border-radius: 20px;
@@ -65,11 +66,13 @@
   margin: 20px auto; /* Center the search bar */
   max-width: 300px; /* Adjust the width as needed */
   transition: max-width 0.3s ease; /* Add transition for smooth expand animation */
+  display: flex;
+  align-items: center; /* Center text vertically */
 }
 
 /* Styles for the search input */
 #searchInput {
-  width: 100%;
+  flex: 1; /* Allow the input to expand */
   padding: 10px;
   border: none;
   background-color: #333;
@@ -137,8 +140,9 @@
     </div>
 1v1.lol fixed
     <div class="search-container" id="searchContainer" onclick="expandSearchBar()" onblur="collapseSearchBar()">
-  <input type="text" id="searchInput" placeholder="Search" oninput="filterGames()" onfocus="expandSearchBar()">
+  <input type="text" id="searchInput" placeholder="Search" oninput="filterGames()" onfocus="expandSearchBar()" onkeypress="handleKeyPress(event)">
 </div>
+
 
 <script>
 function filterGames() {
@@ -173,16 +177,22 @@ function filterGames() {
     }
   }
 }
-
 function expandSearchBar() {
   var searchContainer = document.getElementById("searchContainer");
-  searchContainer.style.maxWidth = "100%"; /* Expand to full width */
+  searchContainer.style.maxWidth = "80%"; /* Adjust the width as needed */
 }
 
 function collapseSearchBar() {
   var searchContainer = document.getElementById("searchContainer");
   searchContainer.style.maxWidth = "300px"; /* Adjust the width as needed */
 }
+
+function handleKeyPress(event) {
+  if (event.key === "Enter") {
+    filterGames();
+  }
+}
+
 </script>
 
     <div class="image-container">
