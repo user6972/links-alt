@@ -136,9 +136,10 @@
         <button class="button" onclick="window.location.href='contact.html'">Contact</button>
     </div>
 1v1.lol fixed
-    <div class="search-container">
+    <div class="search-container" id="searchContainer" onclick="expandSearchBar()" onblur="collapseSearchBar()">
   <input type="text" id="searchInput" placeholder="Search" oninput="filterGames()" onfocus="expandSearchBar()">
 </div>
+
 <script>
 function filterGames() {
   var input, filter, cards, card, title, i;
