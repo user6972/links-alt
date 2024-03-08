@@ -99,10 +99,13 @@
   text-align: center;
 }
 
-        .image-card img {
-            width: 100%; /* Make the image fill the container */
-            border-radius: 15px;
-        }
+       .image-card img {
+    width: 100%;
+    height: 100%; /* Add this line to set the height */
+    border-radius: 15px;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
 
         .image-title {
             color: white;
@@ -125,17 +128,6 @@
     pointer-events: none; /* Make sure particles don't interfere with clicks */
     z-index: -1; /* Set z-index to -1 for particles to be behind other content */
 }
-
-        
-        .centered-icon {
-            text-align: center;
-        }
-
-        .centered-icon img {
-            display: block;
-            margin: 0 auto;
-        }
-        
 
     </style>
 </head>
@@ -221,14 +213,12 @@
         <div class="image-card">
             <a href="/issac.html"><img src="icons/issac.png" alt="The Binding of Isaac"></a>
             <div class="image-title">The Binding of Isaac
-        </div>
-            
-            <div class="image-card centered-icon">
-            <a href="/gdlite.html"><img src="icons/gd.png" alt="Geometry Dash Lite"></a>
+</div>
+            <div class="image-card">
+            <a href="/gdlite.html"><img src="icons/gd.png" alt="monkey mart"></a>
             <div class="image-title">Geometry Dash Lite</div>
         </div>
-
-              
+        </div>
     </div>
     
     
