@@ -9,7 +9,9 @@
             text-align: center;
             background-color: #02133e;
             color: white;
-            font-size: 130%; 
+            font-size: 130%;
+            margin: 0; /* Added margin reset */
+            padding: 0; /* Added padding reset */
         }
         @font-face {
             font-family: 'CustomFont';
@@ -25,15 +27,15 @@
         ul li a {
             text-decoration: none;
             color: white;
-            transition: color 0.3s ease; 
+            transition: color 0.3s ease;
         }
         ul li a:hover {
-            color: lime; 
+            color: lime;
         }
         .button-container {
             display: flex;
             justify-content: center;
-            margin-top: 40px; 
+            margin-top: 40px;
         }
         .button {
             background-color: white;
@@ -43,16 +45,17 @@
             font-size: 16px;
             cursor: pointer;
             margin: 0 10px;
-            border-radius: 15px; 
+            border-radius: 15px;
         }
         .logo {
-            margin-top: 20px; 
+            margin-top: 20px;
         }
 
         .image-container {
             display: flex;
             justify-content: center;
             margin-top: 20px;
+            flex-wrap: wrap; /* Added flex-wrap for responsiveness */
         }
 
         .image-card {
@@ -72,23 +75,16 @@
             padding: 10px;
             font-size: 18px;
         }
-       
-        body, html {
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
-}
 
-#particles-js {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    pointer-events: none; /* Make sure particles don't interfere with clicks */
-    z-index: -1; /* Set z-index to -1 for particles to be behind other content */
-}
-
+        #particles-js {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
@@ -101,30 +97,24 @@
         <button class="button" onclick="window.location.href='about.html'">About</button>
         <button class="button" onclick="window.location.href='contact.html'">Contact</button>
     </div>
-actually fixed the shit and made sure everything was unblocked
+    <!-- Fixed container closure issue -->
     <div class="image-container">
         <div class="image-card">
             <a href="https://rss.feed.link.dansted.org/"><img src="icons/selenite.png" alt="Interstellar 1"></a>
             <div class="image-title">Selenite</div>
         </div>
-       <div class="image-card">
+        <div class="image-card">
             <a href="http://skysmath.cloudsites.me/"><img src="icons/selenite.png" alt="Interstellar 1"></a>
             <div class="image-title">Selenite 2</div>
         </div>
-          <div class="image-card">
+        <div class="image-card">
             <a href="https://edumath.hbmc.net/"><img src="icons/interstellar.png" alt="Interstellar 1"></a>
             <div class="image-title">Interstellar</div>
         </div>
-
-         </div>
-          <div class="image-card">
+        <div class="image-card">
             <a href="https://10.macao.net/"><img src="icons/rammerhead.png" alt="Interstellar 1"></a>
             <div class="image-title">Rammerhead Proxy</div>
         </div>
-  
-     
-    
-        
         <div class="image-card">
             <a href="https://qwerty.uiop.suby.tk/"><img src="icons/asteroid.png" alt="Asteroid"></a>
             <div class="image-title">Asteroid</div>
@@ -133,11 +123,10 @@ actually fixed the shit and made sure everything was unblocked
             <a href="https://secret.awiki.org/"><img src="icons/asteroid.png" alt="Asteroid"></a>
             <div class="image-title">Asteroid 2</div>
         </div>
-    <div class="image-card">
+        <div class="image-card">
             <a href="https://subtraction.particle.es/"><img src="icons/asteroid.png" alt="Asteroid"></a>
             <div class="image-title">Asteroid 3</div>
         </div>
-
     </div>
     <script src="particles.js"></script>
 <script>
@@ -161,5 +150,4 @@ actually fixed the shit and made sure everything was unblocked
 </script>
 
 </body>
-    
 </html>
