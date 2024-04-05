@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linked1</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #02133e;
+            color: white;
+            font-size: 130%; 
+        }
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('bl.ttf') format('truetype');
+        }
+        h2 {
+            font-family: 'CustomFont', Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease; 
+        }
+        ul li a:hover {
+            color: lime; 
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px; 
+        }
+        .button {
+            background-color: white;
+            border: none;
+            color: #02133e;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 10px;
+            border-radius: 15px; 
+        }
+        .logo {
+            margin-top: 20px; 
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+       /* Dark mode styles for the search bar */
+/* Dark mode styles for the search bar */
+/* Dark mode styles for the search bar */
+.search-container {
+  background-color: #333;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px auto; /* Center the search bar */
+  max-width: 300px; /* Adjust the width as needed */
+  transition: max-width 0.3s ease; /* Add transition for smooth expand animation */
+  display: flex;
+  align-items: center; /* Center text vertically */
+}
+
+/* Styles for the search input */
+#searchInput {
+  flex: 1; /* Allow the input to expand */
+  padding: 10px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 15px;
+  outline: none;
+}
+
+/* Light placeholder text for the search input */
+#searchInput::placeholder {
+  color: #bbb;
+}
+
+
+/* Additional styling for the existing image cards */
+.image-card {
+  width: 120px;
+  margin: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+  flex: 0 0 10%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+        .image-card img {
+            width: 100%; /* Make the image fill the container */
+            border-radius: 15px;
+        }
+
+        .image-title {
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+        }
+       
+        body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+#particles-js {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Make sure particles don't interfere with clicks */
+    z-index: -1; /* Set z-index to -1 for particles to be behind other content */
+}
+
+        
+        .centered-icon {
+            text-align: center;
+        }
+
+        .centered-icon img {
+            display: block;
+            margin: 0 auto;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="button-container">
+  <button class="button" onclick="window.location.href='home.html'">Home</button>
+            <button class="button" onclick="window.location.href='games.html'">G</button>
+            <button class="button" onclick="window.location.href='prx.html'">P</button>
+            <button class="button" onclick="window.location.href='request.html'">Request</button>
+            <button class="button" onclick="window.location.href='about.html'">About</button>
+            <button class="button" onclick="window.location.href='contact.html'">Contact</button>
+    </div>
+ 
+
+
+
+
+    <div class="image-container">
+        <div class="image-card">
+            <a href="/rb/index.html"><img src="icons/retrobowl.png" alt=""></a>
+            <div class="image-title">RTR BOWL</div>
+        </div>
+        <div class="image-card">
+            <a href="drifth.html"><img src="icons/drifthunters.png" alt=""></a>
+            <div class="image-title">Hunters that are drifted</div>
+        </div>
+        <div class="image-card">
+            <a href="1v1.html"><img src="icons/1v1lol.png" alt=""></a>
+            <div class="image-title">1playerv1player.laughingoutloud</div>
+        </div>
+        <div class="image-card">
+            <a href="1v1new.html"><img src="icons/1v1lol.png" alt=""></a>
+            <div class="image-title">Other game new ver </div>
+        </div>
+        <div class="image-card">
+            <a href="/tunnel-rush/index.html"><img src="icons/tunnel-rush.jpg" alt="tunnel rush"></a>
+            <div class="image-title">Tunnel Rush</div>
+        </div>
+        <div class="image-card">
+            <a href="/monkey"><img src="icons/monkey.png" alt="monkey mart"></a>
+            <div class="image-title">Mnkey Mrt</div>
+        </div>
+         <div class="image-card">
+            <a href="basketball-s.html"><img src="icons/bs.png" alt="monkey mart"></a>
+            <div class="image-title">bsketbll strs</div>
+        </div>
+         <div class="image-card">
+            <a href="hwheels.html"><img src="icons/hw.jpg" alt="monkey mart"></a>
+            <div class="image-title">Wheels that are happy</div>
+        </div>
+        <div class="image-card">
+            <a href="totm.html"><img src="icons/totm.png" alt="monkey mart"></a>
+            <div class="image-title">Tomb of the mask</div>
+        </div>
+         <div class="image-card">
+            <a href="paper2.html"><img src="icons/paper2.jpg" alt="monkey mart"></a>
+            <div class="image-title">Paper 2</div>
+        </div>
+        <div class="image-card">
+            <a href="/gdlite.html"><img src="icons/gd.png" alt="monkey mart"></a>
+            <div class="image-title">Geometry Learning game</div>
+        </div>
+
+           <div class="image-card">
+            <a href="/blife-embed.html"><img src="icons/blife.jpg" alt="monkey mart"></a>
+            <div class="image-title">Biology</div>
+        </div>
+
+        <div class="image-card">
+            <a href="/ac.html"><img src="icons/ac.jpg" alt="monkey mart"></a>
+            <div class="image-title">Adventure Capitalist</div>
+        </div>
+         <div class="image-card">
+            <a href="/cookiec.html"><img src="icons/cc.png" alt="monkey mart"></a>
+            <div class="image-title">Cookie</div>
+        </div>
+        <div class="image-card">
+            <a href="/tanuki.html"><img src="icons/takuni.jpg" alt="monkey mart"></a>
+            <div class="image-title">Tanuki /div>
+        </div>
+        <div class="image-card">
+            <a href="/issac.html"><img src="icons/issac.png" alt="The Binding of Isaac"></a>
+            <div class="image-title">The Binding of Isaac
+        </div>
+            
+      
+              
+    </div>
+    
+    
+    
+    <script src="particles.js"></script>
+<script>
+    particlesJS("particles-js", {
+        particles: {
+            number: { value: 80, density: { enable: true, value_area: 800 } },
+            color: { value: "#ffffff" },
+            shape: { type: "circle", stroke: { width: 0, color: "#000000" }, polygon: { nb_sides: 5 }, image: { src: "img/github.svg", width: 100, height: 100 } },
+            opacity: { value: 0.5, random: false, anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false } },
+            size: { value: 3, random: true, anim: { enable: false, speed: 40, size_min: 0.1, sync: false } },
+            line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+            move: { enable: true, speed: 6, direction: "none", random: false, straight: false, out_mode: "out", bounce: false, attract: { enable: false, rotateX: 600, rotateY: 1200 } }
+        },
+        interactivity: {
+            detect_on: "canvas",
+            events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
+            modes: { grab: { distance: 400, line_linked: { opacity: 1 } }, bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 }, repulse: { distance: 200, duration: 0.4 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } }
+        },
+        retina_detect: true
+    });
+</script>
+
+</body>
+    
+</html>
